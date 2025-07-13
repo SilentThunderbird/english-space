@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explore Space</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at center, #0b0f1a 0%, #000000 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .poster {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #39ff14;
+      text-shadow: 0 0 10px #39ff14, 0 0 30px #00ff00;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #39ff14, 0 0 30px #00ff00;
+      }
+      to {
+        text-shadow: 0 0 20px #7cff57, 0 0 40px #39ff14;
+      }
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .section h2 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .planets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .planet {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      width: 150px;
+      box-shadow: 0 0 10px #222;
+      transition: transform 0.3s;
+    }
+
+    .planet:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00c8ff;
+    }
+
+    .planet h3 {
+      margin: 10px 0 5px;
+      color: #00c8ff;
+    }
+
+    .planet p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <h1>🌌 Explore Space</h1>
+
+    <div class="section">
+      <h2>Our Solar System</h2>
+      <p>The Solar System is made up of the Sun and everything that orbits around it – including planets, moons, asteroids, and comets. Let’s explore some highlights!</p>
+    </div>
+
+    <div class="section planets">
+      <div class="planet">
+        <h3>🌞 Sun</h3>
+        <p>A massive ball of gas that gives us light and heat.</p>
+      </div>
+      <div class="planet">
+        <h3>🌍 Earth</h3>
+        <p>The only known planet to support life.</p>
+      </div>
+      <div class="planet">
+        <h3>🌕 Moon</h3>
+        <p>Earth’s natural satellite that controls tides.</p>
+      </div>
+      <div class="planet">
+        <h3>🔴 Mars</h3>
+        <p>The Red Planet with the tallest volcano in the solar system.</p>
+      </div>
+      <div class="planet">
+        <h3>🪐 Saturn</h3>
+        <p>Famous for its beautiful rings of ice and rock.</p>
+      </div>
+      <div class="planet">
+        <h3>🔵 Neptune</h3>
+        <p>The windiest planet with deep blue color.</p>
+      </div>
+      <div class="planet">
+        <h3>💠 Uranus</h3>
+        <p>Rotates on its side and has faint rings.</p>
+      </div>
+      <div class="planet">
+        <h3>🟠 Jupiter</h3>
+        <p>The biggest planet, home to the Great Red Spot storm.</p>
+      </div>
+      <div class="planet">
+        <h3>🧊 Pluto</h3>
+        <p>A dwarf planet in the Kuiper Belt – small, cold, and mysterious.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why Explore Space?</h2>
+      <p>Space exploration helps us understand our place in the universe, pushes technology forward, and inspires the next generation of scientists and dreamers.</p>
+    </div>
+  </div>
+</body>
+</html>
